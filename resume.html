@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="logo">
+            <h1 class="logo-heading">My Portfolio</h1>
+        </div>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-list-items"><a href="portfolio.html" class="links">Portfolio</a></li>
+                <li class="menu-list-items"><a href="resume.html" class="links">Resume</a></li>
+                <li class="menu-list-items"><a href="#" class="links download-btn" onclick="downloadResume()">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resume Content Section -->
+    <main class="resume-container">
+        <div class="resume-content">
+            <h2>My Resume</h2>
+            <p>Below is my professional resume. Feel free to review or download it.</p>
+            <div class="resume-image-container">
+            <img src="resume.jpg" alt="My Resume" class="resume-image">
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2024 All rights reserved |
+                This portfolio website template is created 
+                  by SreekarNandagiri.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Download Button -->
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'path/to/resume.jpg'; // Replace with the correct path to your resume image
+            link.download = 'My_Resume.jpg'; // Set the downloaded file name
+            link.click();
+        }
+    </script>
+</body>
+
+</html>
